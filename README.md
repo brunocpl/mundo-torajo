@@ -1,5 +1,7 @@
 # Mundo Torajo — Vila de Verade
 
+### ▶ [Jogar agora no navegador](https://brunocpl.github.io/mundo-torajo/)
+
 Protótipo (greybox) de um jogo de plataforma 3D de exploração livre, feito com HTML5, CSS, JavaScript puro e [Three.js](https://threejs.org/) via CDN — sem build tools.
 
 ## Como jogar
