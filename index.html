@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundo Torajo — Vila de Verade (protótipo)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div class="panel" id="status">
+      <div class="counter">
+        <span class="play-icon"></span>
+        <span id="coins">0/5</span>
+      </div>
+      <div class="counter small">
+        <span class="like-icon"></span>
+        <span id="likes">0/30</span>
+      </div>
+      <div class="char-line">Controlando: <b id="char-name">Torajo</b></div>
+      <div class="char-ability" id="char-ability">Arremesse a Câmera Mágica nos aliados!</div>
+    </div>
+
+    <div class="panel" id="controls">
+      <b>WASD / Setas</b> mover &nbsp;·&nbsp; <b>Espaço</b> pular &nbsp;·&nbsp; <b>Shift</b> dash
+      &nbsp;·&nbsp; <b>E / Clique</b> Câmera Mágica &nbsp;·&nbsp; <b>Q</b> sair da captura
+      &nbsp;·&nbsp; <b>Mouse</b> câmera &nbsp;·&nbsp; <b>Roda</b> zoom &nbsp;·&nbsp; <b>R</b> voltar ao início
+    </div>
+
+    <div id="toast"></div>
+  </div>
+
+  <div id="overlay">
+    <div class="overlay-box">
+      <h1>Mundo Torajo</h1>
+      <h2 id="overlay-sub">Vila de Verade — protótipo</h2>
+      <p>Clique para jogar</p>
+      <small>Esc libera o mouse e pausa</small>
+    </div>
+  </div>
+
+  <div id="finish" class="hidden">
+    <div class="overlay-box">
+      <h1>Fase Concluída!</h1>
+      <h2>Vila de Verade 100%</h2>
+      <div class="stats">
+        <div>Tempo total <b id="f-time">00:00</b></div>
+        <div>Likes coletados <b id="f-likes">0/30</b></div>
+        <div>Botões de Play <b>5/5</b></div>
+      </div>
+      <button id="replay">Jogar novamente</button>
+    </div>
+  </div>
+
+  <!-- Three.js via CDN (build clássica, funciona até abrindo o arquivo direto) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
